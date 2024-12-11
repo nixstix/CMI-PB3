@@ -1,0 +1,254 @@
+
+Attaching package: ‘MOFA2’
+
+The following object is masked from ‘package:stats’:
+
+    predict
+
+── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ lubridate 1.9.3     ✔ tibble    3.2.1
+✔ purrr     1.0.2     ✔ tidyr     1.3.1
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::between()     masks data.table::between()
+✖ dplyr::filter()      masks stats::filter()
+✖ dplyr::first()       masks data.table::first()
+✖ lubridate::hour()    masks data.table::hour()
+✖ lubridate::isoweek() masks data.table::isoweek()
+✖ dplyr::lag()         masks stats::lag()
+✖ dplyr::last()        masks data.table::last()
+✖ lubridate::mday()    masks data.table::mday()
+✖ lubridate::minute()  masks data.table::minute()
+✖ lubridate::month()   masks data.table::month()
+✖ lubridate::quarter() masks data.table::quarter()
+✖ lubridate::second()  masks data.table::second()
+✖ purrr::transpose()   masks data.table::transpose()
+✖ lubridate::wday()    masks data.table::wday()
+✖ lubridate::week()    masks data.table::week()
+✖ lubridate::yday()    masks data.table::yday()
+✖ lubridate::year()    masks data.table::year()
+ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
+
+Attaching package: ‘reshape2’
+
+The following object is masked from ‘package:tidyr’:
+
+    smiths
+
+The following objects are masked from ‘package:data.table’:
+
+    dcast, melt
+
+Loading required package: Biobase
+Loading required package: BiocGenerics
+
+Attaching package: ‘BiocGenerics’
+
+The following objects are masked from ‘package:lubridate’:
+
+    intersect, setdiff, union
+
+The following objects are masked from ‘package:dplyr’:
+
+    combine, intersect, setdiff, union
+
+The following objects are masked from ‘package:stats’:
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from ‘package:base’:
+
+    anyDuplicated, aperm, append, as.data.frame, basename, cbind,
+    colnames, dirname, do.call, duplicated, eval, evalq, Filter, Find,
+    get, grep, grepl, intersect, is.unsorted, lapply, Map, mapply,
+    match, mget, order, paste, pmax, pmax.int, pmin, pmin.int,
+    Position, rank, rbind, Reduce, rownames, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which.max, which.min
+
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: S4Vectors
+Loading required package: stats4
+
+Attaching package: ‘S4Vectors’
+
+The following objects are masked from ‘package:lubridate’:
+
+    second, second<-
+
+The following objects are masked from ‘package:dplyr’:
+
+    first, rename
+
+The following object is masked from ‘package:tidyr’:
+
+    expand
+
+The following objects are masked from ‘package:data.table’:
+
+    first, second
+
+The following object is masked from ‘package:utils’:
+
+    findMatches
+
+The following objects are masked from ‘package:base’:
+
+    expand.grid, I, unname
+
+Loading required package: IRanges
+
+Attaching package: ‘IRanges’
+
+The following object is masked from ‘package:lubridate’:
+
+    %within%
+
+The following objects are masked from ‘package:dplyr’:
+
+    collapse, desc, slice
+
+The following object is masked from ‘package:purrr’:
+
+    reduce
+
+The following object is masked from ‘package:data.table’:
+
+    shift
+
+Loading required package: GenomicRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: MatrixGenerics
+Loading required package: matrixStats
+
+Attaching package: ‘matrixStats’
+
+The following objects are masked from ‘package:Biobase’:
+
+    anyMissing, rowMedians
+
+The following object is masked from ‘package:dplyr’:
+
+    count
+
+
+Attaching package: ‘MatrixGenerics’
+
+The following objects are masked from ‘package:matrixStats’:
+
+    colAlls, colAnyNAs, colAnys, colAvgsPerRowSet, colCollapse,
+    colCounts, colCummaxs, colCummins, colCumprods, colCumsums,
+    colDiffs, colIQRDiffs, colIQRs, colLogSumExps, colMadDiffs,
+    colMads, colMaxs, colMeans2, colMedians, colMins, colOrderStats,
+    colProds, colQuantiles, colRanges, colRanks, colSdDiffs, colSds,
+    colSums2, colTabulates, colVarDiffs, colVars, colWeightedMads,
+    colWeightedMeans, colWeightedMedians, colWeightedSds,
+    colWeightedVars, rowAlls, rowAnyNAs, rowAnys, rowAvgsPerColSet,
+    rowCollapse, rowCounts, rowCummaxs, rowCummins, rowCumprods,
+    rowCumsums, rowDiffs, rowIQRDiffs, rowIQRs, rowLogSumExps,
+    rowMadDiffs, rowMads, rowMaxs, rowMeans2, rowMedians, rowMins,
+    rowOrderStats, rowProds, rowQuantiles, rowRanges, rowRanks,
+    rowSdDiffs, rowSds, rowSums2, rowTabulates, rowVarDiffs, rowVars,
+    rowWeightedMads, rowWeightedMeans, rowWeightedMedians,
+    rowWeightedSds, rowWeightedVars
+
+The following object is masked from ‘package:Biobase’:
+
+    rowMedians
+
+Loading required package: Matrix
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:S4Vectors’:
+
+    expand
+
+The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+Loaded glmnet 4.1-8
+Trained MOFA with the following characteristics: 
+ Number of views: 6 
+ Views names: ab geneExp cytokineL cell_freq tcellPol tcellAct 
+ Number of features (per view): 31 6650 14 39 1 2 
+ Number of groups: 1 
+ Groups names: group1 
+ Number of samples (per group): 508 
+ Number of factors: 15 
+
+     Factor1 Factor2 Factor3 Factor4 Factor5
+x468      NA      NA      NA      NA      NA
+x469      NA      NA      NA      NA      NA
+x470      NA      NA      NA      NA      NA
+x471      NA      NA      NA      NA      NA
+x472      NA      NA      NA      NA      NA
+x473      NA      NA      NA      NA      NA
+x475      NA      NA      NA      NA      NA
+x476      NA      NA      NA      NA      NA
+x477      NA      NA      NA      NA      NA
+x478      NA      NA      NA      NA      NA
+x479      NA      NA      NA      NA      NA
+x480      NA      NA      NA      NA      NA
+x483      NA      NA      NA      NA      NA
+x484      NA      NA      NA      NA      NA
+x485      NA      NA      NA      NA      NA
+x486      NA      NA      NA      NA      NA
+x487      NA      NA      NA      NA      NA
+x488      NA      NA      NA      NA      NA
+x490      NA      NA      NA      NA      NA
+x491      NA      NA      NA      NA      NA
+x492      NA      NA      NA      NA      NA
+x493      NA      NA      NA      NA      NA
+x494      NA      NA      NA      NA      NA
+x495      NA      NA      NA      NA      NA
+x498      NA      NA      NA      NA      NA
+x499      NA      NA      NA      NA      NA
+x500      NA      NA      NA      NA      NA
+x501      NA      NA      NA      NA      NA
+x502      NA      NA      NA      NA      NA
+x503      NA      NA      NA      NA      NA
+    Day0.Factor1 Day0.Factor2 Day0.Factor3 Day0.Factor4 Day0.Factor5
+x61           NA           NA           NA           NA           NA
+x62           NA           NA           NA           NA           NA
+x63           NA           NA           NA           NA           NA
+x64           NA           NA           NA           NA           NA
+x65           NA           NA           NA           NA           NA
+x66   -0.9453320   -1.4864581    -158.1128   -4.4179845     120.1741
+x67   -2.9973597   -1.4487649    -139.8647   -2.9666534     138.3784
+x68   -1.4859617   -1.4905309    -119.8943   -1.5209396     143.0621
+x69   -1.2785458   -1.2517417    -128.2260   -1.9808971     142.1022
+x70   -1.4966211   -2.0367114    -152.7423   -2.3318356     132.9344
+x71   -1.4757258   -1.2789863    -151.2226   -3.9717735     139.4813
+x72   -2.0293571   -3.0134776    -149.1979   -2.1989200     142.8074
+x73   -1.2688254    0.9403073    -150.0361   -3.2533227     136.1303
+x74   -0.6011780   -1.2183854    -153.8711   -0.2204528     144.7528
+x75           NA           NA           NA           NA           NA
+x76           NA           NA           NA           NA           NA
+x77   -0.7970738   -1.5441503    -158.4662   -3.2286601     136.6098
+x78   -0.6187972   -2.1443929    -145.1362   -2.3279798     129.6820
+x79   -1.7180233   -3.3036430    -165.4169   -2.8220963     128.0900
+x80   -3.3653163   -0.5708309    -131.7730   -2.8936538     134.3836
+x81   -4.1097568   -0.8597204    -129.1096   -2.1653893     152.1813
+ [1] 1.380374e+01 3.282289e-01           NA           NA           NA
+ [6] 1.672238e+01 9.410546e-02 6.276439e-01 3.478434e+01 6.742093e-01
+[11] 2.577998e+01 1.535974e+00 1.845246e+00 1.297871e+01           NA
+[16]           NA 5.528656e-01 8.237389e-01 7.664282e-01 3.275554e-04
+[21] 4.552722e-01 1.082307e+00           NA 5.476721e-01           NA
+[26] 2.813304e-01           NA           NA 3.424328e+00 6.224693e+00
+[31] 1.077862e+01 6.181074e-01 1.224738e+00 1.530700e+00 2.333151e+01
+[36] 6.269046e-02
+[1]   36 6811
+    Day0.Factor1 Day0.Factor2 Day0.Factor3 Day0.Factor4 Day0.Factor5
+x61           NA           NA           NA           NA           NA
+x62           NA           NA           NA           NA           NA
+x63           NA           NA           NA           NA           NA
+x64           NA           NA           NA           NA           NA
+x65           NA           NA           NA           NA           NA
